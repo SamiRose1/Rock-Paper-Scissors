@@ -1,0 +1,143 @@
+body {
+  margin: 0%;
+}
+.container {
+  height: 100vh;
+}
+
+.players {
+  display: flex;
+  justify-content: space-evenly;
+  height: 70vh;
+}
+
+.humanPlayer,
+.botPlayer {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(
+    rgb(216, 198, 198),
+    rgb(243, 208, 208),
+    rgb(195, 195, 224)
+  );
+  padding: 40px;
+  width: 40vh;
+  margin: 0% auto;
+  border-radius: 50px;
+  box-shadow: -10px 20px 100px rgb(142, 135, 135);
+}
+
+.botPlayer p,
+.humanPlayer p {
+  background-color: black;
+  color: red;
+  height: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: initial;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  position: fixed;
+}
+.players,
+body {
+  background-image: linear-gradient(
+    rgb(240, 236, 236),
+    rgb(233, 251, 251),
+    rgb(243, 238, 238)
+  );
+}
+
+#reset {
+  color: white;
+  background-color: red;
+  border-style: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+.botCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popMessage {
+  font-size: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-image: linear-gradient(
+    rgb(207, 198, 205),
+    rgb(228, 231, 236),
+    rgb(209, 243, 248)
+  );
+  padding: 30px;
+  border-radius: 20px;
+}
+
+#rock,
+#paper,
+#scissors {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  height: 300px;
+  flex-direction: row;
+  transition: 0.5s ease-in-out;
+  box-shadow: -10px 10px 500px rgb(255, 235, 235);
+
+  border-style: none;
+  border-radius: 60px;
+}
+
+#rock:hover,
+#paper:hover,
+#scissors:hover {
+  height: 370px;
+  transition: 0.4s;
+  margin: 10px;
+  box-shadow: -20px 100px 200px rgb(117, 114, 117);
+  border-style: none;
+  border-radius: 70px;
+}
+
+#rock:hover {
+  border: 2px solid rgb(255, 37, 240);
+  box-shadow: 10px 10px 10px rgb(255, 37, 240);
+}
+
+#paper:hover {
+  border: 2px solid rgb(8, 17, 177);
+  box-shadow: 10px 10px 10px rgb(8, 17, 177);
+}
+#scissors:hover {
+  border: 2px solid rgb(255, 255, 67);
+  box-shadow: 10px 10px 10px rgb(255, 255, 67);
+}
+#images {
+  display: flex;
+  align-items: center;
+}
+.bot,
+.human {
+  position: fixed;
+}
+
+#humanImage,
+#botImage {
+  display: flex;
+  align-items: center;
+}
+
+#humanImage img,
+#botImage img {
+  height: 350px;
+  border-style: none;
+  border-radius: 60px;
+}

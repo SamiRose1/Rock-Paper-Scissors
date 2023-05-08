@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paper, Scissors, Rock</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="players">
+        <div class="humanPlayer">
+          <p class="human">You</p>
+          <div id="humanImage"></div>
+        </div>
+        <div id="images">
+          <img id="rock" onclick="rpsGame(this)" src="images/rock.jpg" alt="" />
+
+          <img
+            id="paper"
+            onclick="rpsGame(this)"
+            src="images/paper.jpg"
+            alt=""
+          />
+
+          <img
+            id="scissors"
+            onclick="rpsGame(this)"
+            src="images/scissors.jpg"
+            alt=""
+          />
+        </div>
+        <div class="botPlayer">
+          <p class="bot">Bot</p>
+          <div id="botImage"></div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="resetBtn"><button id="reset">Reset</button></div>
+        <div class="result">
+          <p>Wins: <span class="wins" id="wins">0</span></p>
+          <p>Draws: <span class="draws" id="draws">0</span></p>
+          <p>Losses: <span class="losses" id="losses">0</span></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
